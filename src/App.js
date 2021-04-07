@@ -5,6 +5,8 @@ import GreetClass from './components/GreetClass'
 import Hello from './components/Hello'
 import Message from './components/Message'
 import Counter from './components/Counter'
+import FunctionClick from './components/FunctionClick'
+import ClassClick from './components/ClassClick'
 
 function App() {
   return (
@@ -18,10 +20,10 @@ function App() {
       <GreetClass name="Wayne" place="New Gotham" />
 
       <Hello />
-
-      <Message />
-
-      <Counter />
+      <Message /><br />
+      <Counter /><br />
+      <FunctionClick /><br/>
+      <ClassClick />
     </div>
   );
 }
