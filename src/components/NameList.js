@@ -12,7 +12,7 @@ function NameList() {
             skill: 'Superhuman Strength'
         },
         {
-            id: 1,
+            id: 2,
             name: 'Black Widow',
             age: '50',
             skill: 'Expert Spy'
@@ -30,24 +30,27 @@ function NameList() {
             skill: 'Superhuman Stamina'
         }
     ]
+    // const heroList = heroColl.map(hero => (
+    //    <Hero hero={hero}></Hero> 
+    // ))
     const heroList = heroColl.map(hero => (
-       <Hero hero={hero}></Hero> 
-    ))
+        <Hero key={hero.id} hero={hero}></Hero> 
+     ))
 
     return (
 
-    //     // <div>
-    //     //     <h2>{names[0]}</h2>
-    //     //     <h2>{names[1]}</h2>
-    //     //     <h2>{names[2]}</h2>
-    //     //     <h2>{names[3]}</h2>
-    //     // </div>
+    //      <div>
+    //         <h2>{names[0]}</h2>
+    //         <h2>{names[1]}</h2>
+    //         <h2>{names[2]}</h2>
+    //         <h2>{names[3]}</h2>
+    //     </div>
 
-    //     // <div>
-    //     //     {
-    //     //         names.map(name => <h2>{name}</h2>)
-    //     //     }
-    //     // </div>
+    //     <div>
+    //        {
+    //            names.map(name => <h2>{name}</h2>)
+    //        }
+    //      </div>
 
     //     //<div>{nameList}</div>
 
