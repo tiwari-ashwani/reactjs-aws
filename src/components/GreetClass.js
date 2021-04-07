@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 class GreetClass extends Component {
-    render(){
+    render() {
         return <h1>I am {this.props.name} from {this.props.place}</h1>
     }
 }

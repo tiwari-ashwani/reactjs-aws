@@ -2,7 +2,7 @@ import React from 'react'
 
 
 const Hello = () => {
-//JSX version
+    //JSX version
     // return (
     //     <div className = 'dummyClass'>
     //         <h1>Hello Ashwani</h1>
@@ -10,9 +10,9 @@ const Hello = () => {
     // )
 
     return React.createElement
-   // ('div', null, 'Hello Ashwani from method')
-   //('div', null, React.createElement('h1', null, 'Hello Ashwani from method'))
-   ('div', {id:'hello', className: 'dummyClass'}, React.createElement('h1', null, 'Hello Ashwani from method'))
+        // ('div', null, 'Hello Ashwani from method')
+        //('div', null, React.createElement('h1', null, 'Hello Ashwani from method'))
+        ('div', { id: 'hello', className: 'dummyClass' }, React.createElement('h1', null, 'Hello Ashwani from method'))
 }
 
 export default Hello
