@@ -1,9 +1,10 @@
 import React from 'react'
+import Hero from './Hero'
 
 function NameList() {
     //const names = ['Dr. Banner', 'Natasha', 'Tony', 'Steve']
     //const nameList = names.map(name => <h2>{name}</h2>)
-    const persons = [
+    const heroColl = [
         {
             id: 1,
             name: 'Hulk',
@@ -29,20 +30,11 @@ function NameList() {
             skill: 'Superhuman Stamina'
         }
     ]
-    // const personList = persons.map(person => (
-    //     <h2>
-    //         I am {person.name}, 
-    //         I am {person.age} years old and 
-    //         my powers are {person.skill}
-    //     </h2>    
-    // ))
+    const heroList = heroColl.map(hero => (
+       <Hero hero={hero}></Hero> 
+    ))
 
-    const personList = persons.map(person => (
-        <Person person={person}> </Person>
-        ))
-
-    return <div>{personList}</div>
-    // return (
+    return (
 
     //     // <div>
     //     //     <h2>{names[0]}</h2>
@@ -59,8 +51,8 @@ function NameList() {
 
     //     //<div>{nameList}</div>
 
-    //     <div>{heroList}</div>
-    // )
+        <div>{heroList}</div>
+     )
 }
 
 export default NameList
