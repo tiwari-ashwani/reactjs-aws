@@ -20,7 +20,7 @@ function NameList() {
             id: 3,
             name: 'Iron Man',
             age: '3000',
-            skill: 'Genius Level Intellect'
+            skill: 'Genius Intellect'
         },
         {
             id: 4,
