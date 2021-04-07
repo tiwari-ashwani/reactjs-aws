@@ -25,7 +25,7 @@ import React from 'react'
 //Destructring props code in the function
 const Greet = props => {
     const {name, place} = props
-    console.log(name + ' - - '+ place)
+    //console.log(name + ' - - '+ place)
     return (
     <h1>
         Hello {name} from {place}!! 
