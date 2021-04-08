@@ -17,12 +17,15 @@ import InlineStyling from './components/InlineStyling';
 import './appStyles.css';
 import styles from './appStyles.module.css';
 import Form from './components/Form'
+import LifecycleUpdating from './components/LifecycleUpdating';
 
 class App extends Component{
   render(){
     return (
       <div className='App'>
-        <Form />
+        {/* <LifecycleMounting /><br /> */}
+        <LifecycleUpdating /><br />
+        {/* <Form /> */}
       </div>
     )
   }
