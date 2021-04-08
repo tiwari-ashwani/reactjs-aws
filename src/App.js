@@ -17,14 +17,16 @@ import InlineStyling from './components/InlineStyling';
 import './appStyles.css';
 import styles from './appStyles.module.css';
 import Form from './components/Form'
-import LifecycleUpdating from './components/LifecycleUpdating';
+import ParentComp from './components/ParentComp';
 
 class App extends Component{
   render(){
     return (
       <div className='App'>
+        <ParentComp />
+        {/* <FragmentDemo /> */}
         {/* <LifecycleMounting /><br /> */}
-        <LifecycleUpdating /><br />
+        {/* <LifecycleUpdating /><br /> */}
         {/* <Form /> */}
       </div>
     )
