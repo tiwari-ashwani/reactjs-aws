@@ -11,26 +11,33 @@ import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
+import Stylesheet from './components/Stylesheet';
+import InlineStyling from './components/InlineStyling';
+import './appStyles.css';
+import styles from './appStyles.module.css';
 
 function App() {
   return (
     <div className="App">
+
+      <h1 className='error'>Error Style</h1>
+      <h1 className={styles.success}>Success Style</h1>
+      <InlineStyling />
+      <Stylesheet primary={true} />
       <NameList /> <br />
       <UserGreeting /> <br />
-      <ParentComponent /><br/>
+      <ParentComponent /><br />
       <Greet name="Mister" place="Old Gotham" />
       <Greet name="Bruce" place="Gotham" />
       <Greet name="Wayne" place="Old Gotham" />
-
       <GreetClass name="Mister" place="Old Gotham" />
       <GreetClass name="Bruce" place="Gotham" />
       <GreetClass name="Wayne" place="New Gotham" />
-
       <Hello />
       <Message /><br />
       <Counter /><br />
-      <FunctionClick /><br/>
-      <ClassClick /><br/>
+      <FunctionClick /><br />
+      <ClassClick /><br />
       <EventBind />
 
     </div>
