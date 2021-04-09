@@ -23,12 +23,16 @@ import FocusInput from './components/FocusInput'
 import PortalDemo from './components/PortalDemo'
 import Villian from './components/Villian'
 import ErrorBoundary from './components/ErrorBoundary'
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 class App extends Component {
   render() {
     return (
       <div className='App'>
-        <ErrorBoundary>
+        <br /> <HoverCounter mame='Tony Stark'/>
+        <br /><ClickCounter name ='Almighty Hulk'/>
+        {/* <ErrorBoundary>
           <Villian villName='Joker' />
         </ErrorBoundary>
         <ErrorBoundary>
@@ -36,7 +40,7 @@ class App extends Component {
         </ErrorBoundary>
         <ErrorBoundary>
           <Villian villName='Thanos' />
-        </ErrorBoundary>
+        </ErrorBoundary> */}
         {/* <PortalDemo /> */}
         {/* <FocusInput /> */}
         {/* <RefsDemo /> */}
