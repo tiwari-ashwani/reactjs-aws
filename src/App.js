@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import Greet from './components/Greet'
 import GreetClass from './components/GreetClass'
 import Hello from './components/Hello'
@@ -14,18 +14,31 @@ import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
 import Stylesheet from './components/Stylesheet';
 import InlineStyling from './components/InlineStyling';
-import './appStyles.css';
-import styles from './appStyles.module.css';
+import './appStyles.css'
+import styles from './appStyles.module.css'
 import Form from './components/Form'
-import ParentComp from './components/ParentComp';
-import RefsDemo from './components/RefsDemo';
-import FocusInput from './components/FocusInput';
+import ParentComp from './components/ParentComp'
+import RefsDemo from './components/RefsDemo'
+import FocusInput from './components/FocusInput'
+import PortalDemo from './components/PortalDemo'
+import Villian from './components/Villian'
+import ErrorBoundary from './components/ErrorBoundary'
 
-class App extends Component{
-  render(){
+class App extends Component {
+  render() {
     return (
       <div className='App'>
-        <FocusInput />
+        <ErrorBoundary>
+          <Villian villName='Joker' />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Villian villName='Hulk' />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Villian villName='Thanos' />
+        </ErrorBoundary>
+        {/* <PortalDemo /> */}
+        {/* <FocusInput /> */}
         {/* <RefsDemo /> */}
         {/* <ParentComp /> */}
         {/* <FragmentDemo /> */}
