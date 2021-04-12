@@ -23,15 +23,55 @@ import FocusInput from './components/FocusInput'
 import PortalDemo from './components/PortalDemo'
 import Villian from './components/Villian'
 import ErrorBoundary from './components/ErrorBoundary'
-import ClickCounter from './components/ClickCounter';
+import User from './components/User';
 import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import CounterRenderProps from './components/CounterRenderProps';
 
 class App extends Component {
   render() {
     return (
       <div className='App'>
-        <br /> <HoverCounter mame='Tony Stark'/>
-        <br /><ClickCounter name ='Almighty Hulk'/>
+        {/* <br /><ClickCounterTwo /> */}
+        {/* <br /><HoverCounterTwo /> */}
+        {/* <br /><User render = {(isLoggedIn) => isLoggedIn ?'Ashwani' : 'Guest'}/> */}
+
+        <br />
+        <CounterRenderProps
+          render={(count, incrementCount) => (
+            <ClickCounterTwo count={count}
+              incrementCount={incrementCount} />
+          )}
+        />
+
+        <br />
+        <CounterRenderProps
+          render={(count, incrementCount) => (
+            <HoverCounterTwo count={count}
+              incrementCount={incrementCount} />
+          )}
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {/* <br /> <HoverCounter mame='Tony Stark'/> */}
+        {/* <br /><ClickCounter name ='Almighty Hulk'/> */}
         {/* <ErrorBoundary>
           <Villian villName='Joker' />
         </ErrorBoundary>
