@@ -28,16 +28,33 @@ import HoverCounter from './components/HoverCounter';
 import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
 import CounterRenderProps from './components/CounterRenderProps';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/UserContext';
+import PostList from './components/PostList';
 
 class App extends Component {
   render() {
     return (
       <div className='App'>
+        <br />
+
+        <PostList />
+        {/* <UserProvider value ='Ashwani'>
+          <ComponentC />
+        </UserProvider> */}
+
+
+
+
+
+
+
+
         {/* <br /><ClickCounterTwo /> */}
         {/* <br /><HoverCounterTwo /> */}
         {/* <br /><User render = {(isLoggedIn) => isLoggedIn ?'Ashwani' : 'Guest'}/> */}
 
-        <br />
+        {/* <br />
         <CounterRenderProps
           render={(count, incrementCount) => (
             <ClickCounterTwo count={count}
@@ -51,7 +68,7 @@ class App extends Component {
             <HoverCounterTwo count={count}
               incrementCount={incrementCount} />
           )}
-        />
+        /> */}
 
 
 
