@@ -37,6 +37,8 @@ import HookCounter from './components/HookCounter';
 import HookCounterTwo from './components/HookCounterTwo';
 import HookCounterThree from './components/HookCounterThree';
 import HookCounterFour from './components/HookCounterFour';
+import ClassCounterOne from './components/ClassCounterOne';
+import HookCounterOne from './components/HookCounterOne';
 
 class App extends Component {
   render() {
@@ -44,11 +46,95 @@ class App extends Component {
       <div className='App'>
         <br />
 
-        <HookCounterFour />
+        <HookCounterOne />
+        <ClassCounterOne />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {/* <HookCounterFour /> */}
         {/* <HookCounterThree /> */}
         {/* <HookCounterTwo /> */}
         {/* <HookCounter /> */}
         {/* <ClassCounter /> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         {/* <PostForm /> */}
         {/* <PostList /> */}
