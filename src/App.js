@@ -31,6 +31,7 @@ import CounterRenderProps from './components/CounterRenderProps';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/UserContext';
 import PostList from './components/PostList';
+import PostForm from './components/PostForm';
 
 class App extends Component {
   render() {
@@ -38,8 +39,9 @@ class App extends Component {
       <div className='App'>
         <br />
 
-        <PostList />
-        {/* <UserProvider value ='Ashwani'>
+        <PostForm />
+          {/* <PostList /> */}
+          {/* <UserProvider value ='Ashwani'>
           <ComponentC />
         </UserProvider> */}
 
@@ -50,11 +52,11 @@ class App extends Component {
 
 
 
-        {/* <br /><ClickCounterTwo /> */}
-        {/* <br /><HoverCounterTwo /> */}
-        {/* <br /><User render = {(isLoggedIn) => isLoggedIn ?'Ashwani' : 'Guest'}/> */}
+          {/* <br /><ClickCounterTwo /> */}
+          {/* <br /><HoverCounterTwo /> */}
+          {/* <br /><User render = {(isLoggedIn) => isLoggedIn ?'Ashwani' : 'Guest'}/> */}
 
-        {/* <br />
+          {/* <br />
         <CounterRenderProps
           render={(count, incrementCount) => (
             <ClickCounterTwo count={count}
@@ -87,9 +89,9 @@ class App extends Component {
 
 
 
-        {/* <br /> <HoverCounter mame='Tony Stark'/> */}
-        {/* <br /><ClickCounter name ='Almighty Hulk'/> */}
-        {/* <ErrorBoundary>
+          {/* <br /> <HoverCounter mame='Tony Stark'/> */}
+          {/* <br /><ClickCounter name ='Almighty Hulk'/> */}
+          {/* <ErrorBoundary>
           <Villian villName='Joker' />
         </ErrorBoundary>
         <ErrorBoundary>
@@ -98,14 +100,14 @@ class App extends Component {
         <ErrorBoundary>
           <Villian villName='Thanos' />
         </ErrorBoundary> */}
-        {/* <PortalDemo /> */}
-        {/* <FocusInput /> */}
-        {/* <RefsDemo /> */}
-        {/* <ParentComp /> */}
-        {/* <FragmentDemo /> */}
-        {/* <LifecycleMounting /><br /> */}
-        {/* <LifecycleUpdating /><br /> */}
-        {/* <Form /> */}
+          {/* <PortalDemo /> */}
+          {/* <FocusInput /> */}
+          {/* <RefsDemo /> */}
+          {/* <ParentComp /> */}
+          {/* <FragmentDemo /> */}
+          {/* <LifecycleMounting /><br /> */}
+          {/* <LifecycleUpdating /><br /> */}
+          {/* <Form /> */}
       </div>
     )
   }
@@ -115,7 +117,7 @@ class App extends Component {
 //   return (
 //     <div className="App">
 
-//       <h1 className='error'>Error Style</h1>
+          //       <h1 className='error'>Error Style</h1>
 //       <h1 className={styles.success}>Success Style</h1>
 //       <InlineStyling />
 //       <Stylesheet primary={true} />
