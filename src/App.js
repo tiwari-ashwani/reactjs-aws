@@ -1,50 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
 import React, { Component } from 'react'
-import Greet from './components/Greet'
-import GreetClass from './components/GreetClass'
-import Hello from './components/Hello'
-import Message from './components/Message'
-import Counter from './components/Counter'
-import FunctionClick from './components/FunctionClick'
-import ClassClick from './components/ClassClick'
-import EventBind from './components/EventBind';
-import ParentComponent from './components/ParentComponent';
-import UserGreeting from './components/UserGreeting';
-import NameList from './components/NameList';
-import Stylesheet from './components/Stylesheet';
-import InlineStyling from './components/InlineStyling';
 import './appStyles.css'
-import styles from './appStyles.module.css'
-import Form from './components/Form'
-import ParentComp from './components/ParentComp'
-import RefsDemo from './components/RefsDemo'
-import FocusInput from './components/FocusInput'
-import PortalDemo from './components/PortalDemo'
-import Villian from './components/Villian'
-import ErrorBoundary from './components/ErrorBoundary'
-import User from './components/User';
-import HoverCounter from './components/HoverCounter';
-import ClickCounterTwo from './components/ClickCounterTwo';
-import HoverCounterTwo from './components/HoverCounterTwo';
-import CounterRenderProps from './components/CounterRenderProps';
-import ComponentC from './components/ComponentC';
-import { UserProvider } from './components/UserContext';
-import PostList from './components/PostList';
-import PostForm from './components/PostForm';
-import ClassCounter from './components/ClassCounter';
-import HookCounter from './components/HookCounter';
-import HookCounterTwo from './components/HookCounterTwo';
-import HookCounterThree from './components/HookCounterThree';
-import HookCounterFour from './components/HookCounterFour';
-import ClassCounterOne from './components/ClassCounterOne';
-import HookCounterOne from './components/HookCounterOne';
-import ClassMouse from './components/ClassMouse';
-import HookMouse from './components/HookMouse';
-import MouseContainer from './components/MouseContainer';
-import IntervalClassCounter from './components/IntervalClassCounter';
-import IntervalHookCounter from './components/IntervalHookCounter';
-import DataFetching from './components/DataFetching';
+import CounterOne from './components/CounterOne';
+import CounterTwo from './components/CounterTwo';
+import CounterThree from './components/CounterThree';
 
 class App extends Component {
   render() {
@@ -52,119 +12,32 @@ class App extends Component {
       <div className='App'>
         <br />
 
-        <DataFetching />
+        <CounterThree />
+        {/* <CounterTwo /> */}
+        {/* <CounterOne /> */}
+
+
+
+
+        {/* <DataFetching /> */}
         {/* <IntervalHookCounter /> */}
-
         {/* <IntervalClassCounter /> */}
-
-
-
         {/* <MouseContainer /> */}
         {/* <HookMouse /> */}
         {/* <ClassMouse /> */}
         {/* <HookCounterOne /> */}
         {/* <ClassCounterOne /> */}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         {/* <HookCounterFour /> */}
         {/* <HookCounterThree /> */}
         {/* <HookCounterTwo /> */}
         {/* <HookCounter /> */}
         {/* <ClassCounter /> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         {/* <PostForm /> */}
         {/* <PostList /> */}
         {/* <UserProvider value ='Ashwani'>
           <ComponentC />
         </UserProvider> */}
-
-
-
-
-
-
-
-
         {/* <br /><ClickCounterTwo /> */}
         {/* <br /><HoverCounterTwo /> */}
         {/* <br /><User render = {(isLoggedIn) => isLoggedIn ?'Ashwani' : 'Guest'}/> */}
