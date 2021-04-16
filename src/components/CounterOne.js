@@ -1,4 +1,3 @@
-import userEvent from '@testing-library/user-event'
 import React, { useReducer } from 'react'
 
 const initialState = 0
